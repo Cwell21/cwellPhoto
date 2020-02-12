@@ -163,11 +163,8 @@ INFORMATION RIBBON STYLES
 }
 
 .module p {
-  align-items: center;
   border: 2px solid rgb(212,175,55);
-  display: flex;
   height: 25%;
-  justify-content: center;
   margin-top: 2%;
   text-align: center;
   width: 75%;
@@ -175,8 +172,12 @@ INFORMATION RIBBON STYLES
 
 .module p a {
   color: rgb(75,75,75);
+  display: inline-block;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 2vh;
+  height: 100%;
+  padding-top: 2vh;
+  width: 100%;
 }
 
 /* ******************************************************************************
