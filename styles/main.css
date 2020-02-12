@@ -1,0 +1,71 @@
+/*
+  STYLES FOR MC RESUME PROJCET
+  MAIN.CSS CONTAINS SITE WIDE STYLES
+  IMPORT PAGE SPECIFIC STYLES
+ */
+
+ /* FONT CODE
+ font-family: 'Martel Sans', sans-serif;
+
+  */
+
+@import 'index.css'; /* styles for index.html page*/
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+#mainWrapper {
+  background: url('../images/siteBackground.jpg');
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  height: auto;
+  left: 0;
+  margin: auto;
+  min-height: 100vh;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.page-header {
+  align-items: center;
+  background-color: rgba(35,35,35,.95);
+  display: flex;
+  flex-flow: row nowrap;
+  height: 15%;
+  justify-content: flex-start;
+  padding: 1em 2em 0;
+  width: 100vw;
+}
+
+.pageFooter {
+  background-color: rgb(135,135,135);
+  color: rgb(235,235,235);
+  display: flex;
+  flex-flow: row nowrap;
+  height: 10vh;
+  width: 100vw;
+
+}
