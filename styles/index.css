@@ -126,17 +126,21 @@ INFORMATION RIBBON STYLES
   background-color: rgb(35,35,35);
   display: flex;
   flex-flow: row wrap;
-  height: 75vh;
+  height: 35vh;
   justify-content: space-around;
   width:100vw;
 }
 .module {
+  align-items: center;
   background-color: rgb(235,235,235);
   border-radius: 5px;
   box-shadow: 0px 0px 3px 5px rgb(75,75,75);
   color: rgb(5,5,5);
+  display: flex;
+  flex-flow: column;
   height: 75%;
-  padding: 1rem;
+  justify-content: space-around;
+  padding: .125rem;
   transition: 1s;
   width: 20%;
 }
@@ -153,29 +157,26 @@ INFORMATION RIBBON STYLES
   box-shadow: 0px 0px 3px 10px rgb(212,175,55);
 }
 
-
-.module figure {
-  box-shadow: 5px -5px 5px rgb(175,175,175);   
-  margin: 0 .125rem 0;
-}
-
 .module h2 {
-  padding-top: .5rem;
+  padding-top: 1vh;
   text-align: center;
 }
 
 .module p {
+  align-items: center;
   border: 2px solid rgb(212,175,55);
+  display: flex;
   height: 25%;
-  margin-top: 2rem;
-  padding-top: 2rem;
+  justify-content: center;
+  margin-top: 2%;
   text-align: center;
+  width: 75%;
 }
 
 .module p a {
   color: rgb(75,75,75);
   font-family: 'Alegreya Sans SC', sans-serif;
-
+  font-size: 2vh;
 }
 
 /* ******************************************************************************

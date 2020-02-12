@@ -33,22 +33,22 @@ function myScroll() {
     elAboutRibbonArticle.style.right = 0;
   }
 
-  if(xPos.y <= -225){
-    pulseModule();
-  }   
+  // if(xPos.y <= -150){
+  //   pulseModule();
+  // }   
 }
 
-function pulseModule() {
-  setTimeout(() => {
-    for(let i=0; i<elModule.length; i++){
-      elModule[i].classList.add('modulePulse');
-    }
-  }, 50);
+// function pulseModule() {
+//   setTimeout(() => {
+//     for(let i=0; i<elModule.length; i++){
+//       elModule[i].classList.add('modulePulse');
+//     }
+//   }, 50);
   
-  setTimeout(()=> {
-    for(let i=0; i<elModule.length; i++) {
-      elModule[i].classList.remove('modulePulse');
-      elModule[i].classList.add('moduleVisible');
-    }
-  },500);    
-}
+//   setTimeout(()=> {
+//     for(let i=0; i<elModule.length; i++) {
+//       elModule[i].classList.remove('modulePulse');
+//       elModule[i].classList.add('moduleVisible');
+//     }
+//   },500);    
+// }
