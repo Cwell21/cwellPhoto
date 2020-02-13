@@ -38,6 +38,20 @@ function myScroll() {
   // }   
 }
 
+// DISPLAY SUB PAGE ON CLICK
+function dispResume(elIdToOpen) {
+  document.getElementById(elIdToOpen).style.width = '100vw';
+  document.getElementById(elIdToOpen).style.height = '100vh';
+  
+}
+
+// HIDE SUB PAGE ON CLICK
+function closePage(elIdToClose) {
+  document.getElementById(elIdToClose).style.width = '0';
+  document.getElementById(elIdToClose).style.height = '0';
+}
+
+
 // function pulseModule() {
 //   setTimeout(() => {
 //     for(let i=0; i<elModule.length; i++){

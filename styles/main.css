@@ -11,7 +11,7 @@ font-family: 'Alegreya Sans SC', sans-serif; - LINKS
   */
 
 @import 'index.css'; /* styles for index.html page*/
-
+@import 'resume.css'; /*styles for resume section */
 * {
 
   box-sizing: border-box;
@@ -42,7 +42,7 @@ img {
   flex-flow: column nowrap;
   height: auto;
   left: 0;
-  margin: auto;
+  /* margin: auto; */
   min-height: 100vh;
   overflow: visible;
   position: absolute;
@@ -58,6 +58,7 @@ img {
   height: 15%;
   justify-content: flex-start;
   padding: 1em 2em 0;
+  position: relative;
   width: 100vw;
 }
 
@@ -68,5 +69,22 @@ img {
   flex-flow: row nowrap;
   height: 10vh;
   width: 100vw;
-
 }
+
+/* styles for typical subpage components */
+.btnClose {
+  background-color: rgb(235,235,235);
+  border: 1px solid rgb(5,5,5);
+  border-radius: 50%;
+  color: rgb(212,175,75);
+  cursor: pointer;
+  font-size: 4vh;
+  height: 5vh;
+  padding: .5vh 0;
+  position: absolute;
+  right: 50px;
+  text-align: center;
+  top: 50px;
+  width: 5vh;
+}
+

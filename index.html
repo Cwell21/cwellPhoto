@@ -20,14 +20,19 @@
     <link href='styles/meyer-reset.css' rel='stylesheet' type='text/css'>
     <link href='styles/main.css' rel='stylesheet' type='text/css'>
   </head>
-  <body onscroll='myScroll()'>
-    <div id='mainWrapper'>     
+  <body onscroll='myScroll()'>      
+    <div id='mainWrapper'>
+      <!-- RESUME SECTION -->
+      <section id='resume'>
+        <div class='btnClose' onclick='closePage("resume")'>X</div>
+      </section>   
+        <!-- START OF LANDING PAGE  -->
       <header class='page-header'>
         <img id='logo' src='images/resumeLogo.svg'>
         <nav id='pageNavigation'>
           <ul id='navList'>
             <li class='navItem'><a href='#'>Portfolio</a></li>
-            <li class='navItem'><a href='#'>Resume</a></li>
+            <li class='navItem'><a href='javascript:void(0)' onclick='dispResume("resume")'>Resume</a></li>
             <li class='navItem'><a href='#'>About</a></li>
             <li class='navItem'><a href='https://github.com/cwell21' target='_blank'>Git Hub</a></li>
             <li class='navItem'><a href='#'>Contact</a></li>
