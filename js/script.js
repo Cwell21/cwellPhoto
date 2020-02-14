@@ -43,8 +43,16 @@ function myScroll() {
 
 // DISPLAY SUB PAGE ON CLICK
 function dispResume(elIdToOpen) {
+  
+  let elSchools = document.getElementsByClassName('school');
+
   document.getElementById(elIdToOpen).style.width = '100vw';
   document.getElementById(elIdToOpen).style.height = '100vh';
+  
+  for(let i=0; i < elSchools.length; i++) {
+    elSchools[i].style.marginLeft = '0px';
+  }
+
 
   if (elIdToOpen == 'resume'){
     
