@@ -8,6 +8,9 @@ const elAboutRibbon = document.getElementById('aboutRibbon');
 const elAboutRibbonFigure = document.getElementById('aboutRibbonFigure');
 const elAboutRibbonArticle = document.getElementById('aboutRibbonArticle');
 const elModule = document.getElementsByClassName('module');
+const elSkillContainer = document.getElementsByClassName('skillContainer');
+const elSkillBar = document.getElementsByClassName('skillBar');
+
 
 
 let mainWrapperYPos = 0;
@@ -42,15 +45,62 @@ function myScroll() {
 function dispResume(elIdToOpen) {
   document.getElementById(elIdToOpen).style.width = '100vw';
   document.getElementById(elIdToOpen).style.height = '100vh';
-  
+
+  if (elIdToOpen == 'resume'){
+    
+    let elSkillName = document.getElementsByClassName('skillName');
+    for(let i=0; i<elSkillBar.length; i++) {
+      switch (elSkillName[i].innerHTML){
+        case 'HTML 5':
+          elSkillBar[i].style.width = '85px';
+          break;
+        case 'CSS':
+          elSkillBar[i].style.width = '70px';
+          break;
+        case 'Javascript':
+          elSkillBar[i].style.width = '70px';
+          break;
+        case 'React JS':
+          elSkillBar[i].style.width = '40px';
+          break;
+        case 'Python':
+          elSkillBar[i].style.width = '10px';
+          break;
+        case 'SASS/SCSS':
+          elSkillBar[i].style.width = '60px';
+          break;
+        default:
+          break;
+      }      
+    }
+  }  
 }
 
 // HIDE SUB PAGE ON CLICK
 function closePage(elIdToClose) {
   document.getElementById(elIdToClose).style.width = '0';
   document.getElementById(elIdToClose).style.height = '0';
+
+  if(elIdToClose == 'resume') {
+    let elSkillBar = document.getElementsByClassName('skillBar')
+
+    for(let i=0; i < elSkillBar.length; i++) {
+      elSkillBar[i].style.width = 0;
+    }
+  }
+
 }
 
+// IIFE TO DETERMINE HEIGHT OF SKILLS LIST ITEMS IN RESUME SECTION
+(function () {
+
+  let containerHeight = 100 / elSkillCOntainer.length;
+
+  for(let i=0; i < elSkillContainer; i++) {
+    elSkillContainer[i].style.height = `${containerHeight}%`;
+  }
+
+}());
 
 // function pulseModule() {
 //   setTimeout(() => {
