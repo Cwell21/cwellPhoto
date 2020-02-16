@@ -42,7 +42,7 @@ function myScroll() {
 }
 
 // DISPLAY SUB PAGE ON CLICK
-function dispResume(elIdToOpen) {
+function dispSubPage(elIdToOpen) {
   
   let elSchools = document.getElementsByClassName('school');
 
@@ -102,7 +102,7 @@ function closePage(elIdToClose) {
 // IIFE TO DETERMINE HEIGHT OF SKILLS LIST ITEMS IN RESUME SECTION
 (function () {
 
-  let containerHeight = 100 / elSkillCOntainer.length;
+  let containerHeight = 100 / elSkillContainer.length;
 
   for(let i=0; i < elSkillContainer; i++) {
     elSkillContainer[i].style.height = `${containerHeight}%`;

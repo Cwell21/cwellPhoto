@@ -2,21 +2,6 @@
 STYLES FOR RESUME SECTION
 *****************************/
 
-#resume {  
-  align-items: center;
-  background-color: rgba(175,175,175,.75);
-  display: flex;
-  flex-flow: column nowrap;
-  height: 0;
-  justify-content: flex-start;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  transition: .5s;
-  width: 0;
-  z-index: 1;
-}
 
 /*************************************
 EDUCATION STYLES

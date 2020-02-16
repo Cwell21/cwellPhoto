@@ -12,6 +12,8 @@ font-family: 'Alegreya Sans SC', sans-serif; - LINKS
 
 @import 'index.css'; /* styles for index.html page*/
 @import 'resume.css'; /*styles for resume section */
+@import 'portfolio.css'; /*styles for portfolio section */
+
 * {
 
   box-sizing: border-box;
@@ -35,7 +37,7 @@ img {
   max-width: 100%;
 }
 
-#mainWrapper {
+.mainWrapper {
   background: url('../images/siteBackground.jpg');
   background-size: cover;
   display: flex;
@@ -87,5 +89,21 @@ img {
   text-align: center;
   top: 50px;
   width: 5vh;
+}
+
+.subSection {
+  align-items: center;
+  background-color: rgba(175,175,175,.75);
+  display: flex;
+  flex-flow: column nowrap;
+  height: 0;
+  justify-content: flex-start;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transition: .5s;
+  width: 0;
+  z-index: 1;
 }
 
