@@ -38,7 +38,7 @@ img {
 }
 
 .mainWrapper {
-  background: url('../images/siteBackground.jpg');
+  background-image: url('../images/siteBackground.jpg');
   background-size: cover;
   display: flex;
   flex-flow: column nowrap;
@@ -46,20 +46,22 @@ img {
   left: 0;
   /* margin: auto; */
   min-height: 100vh;
-  overflow: visible;
+  overflow: hidden;
   position: absolute;
   top: 0;
   width: 100vw;
+  
 }
 
-.page-header {
+.pageHeader {
   align-items: center;
   background-color: rgba(35,35,35,.95);
+  box-shadow: 5px 5px 10px rgb(5,5,5);
   display: flex;
   flex-flow: row nowrap;
   height: 15%;
   justify-content: flex-start;
-  padding: 1em 2em 0;
+  padding: 1vh 1vw;
   position: relative;
   width: 100vw;
 }

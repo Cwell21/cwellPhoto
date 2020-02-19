@@ -29,9 +29,110 @@
       <section class='subSection' id='portfolio'>
         <div class='btnClose' onclick='closePage("portfolio")'>X</div>
         <div class='slideContainer'>
+         <!--
 
+            SLIDE SECTION
+
+         -->
+          <section class='slide'>
+            <header>
+              <h2>Treasure Hunt</h2>
+              <p>Learning project - Javascript</p>
+            </header>
+            <nav>
+              <a href='https://cwell21.github.io/treasure/index.html' target='_blank'>
+                <i class="fas fa-desktop fa-3x"></i>
+                View Site
+              </a>
+              <a href='https://github.com/Cwell21/treasure' target='_blank'>
+                <i class="far fa-file-code fa-3x"></i>
+                View Code
+              </a>
+            </nav>              
+          </section>
+          <section class='slide'>
+            <header>
+              <h2>Imo's Pizza</h2>
+              <p>Learning project - Rebuild of an existing site</p>
+            </header>
+            <nav>
+              <a href='https://cwell21.github.io/imosMockup/' target='_blank'>
+                <i class="fas fa-desktop fa-3x"></i>
+                View Site
+              </a>
+              <a href='https://github.com/Cwell21/imosMockup' target='_blank'>
+                <i class="far fa-file-code fa-3x"></i>
+                View Code
+              </a>
+            </nav>              
+          </section>
+          <section class='slide'>
+            <header>
+              <h2>Rocky Mountain Conservancy</h2>
+              <p>Learning project - Site</p>
+            </header>
+            <nav>
+              <a href='https://cwell21.github.io/romocon/' target='_blank'>
+                <i class="fas fa-desktop fa-3x"></i>
+                View Site
+              </a>
+              <a href='https://github.com/Cwell21/romocon' target='_blank'>
+                <i class="far fa-file-code fa-3x"></i>
+                View Code
+              </a>
+            </nav>              
+          </section>
+          <section class='slide'>
+              <header>
+                <h2>Florida Energy Project</h2>
+                <p>School project - Class Assignment</p>
+              </header>
+              <nav>
+                <a href='https://cwell21.github.io/florida-energy-project/' target='_blank'>
+                  <i class="fas fa-desktop fa-3x"></i>
+                  View Site
+                </a>
+                <a href='https://github.com/Cwell21/florida-energy-project' target='_blank'>
+                  <i class="far fa-file-code fa-3x"></i>
+                  View Code
+                </a>
+              </nav>              
+            </section>
+            <section class='slide'>
+              <header>
+                <h2>Thirsty Bear</h2>
+                <p>Learning project - Build a site</p>
+              </header>
+              <nav>
+                <a href='https://cwell21.github.io/tbear/' target='_blank'>
+                  <i class="fas fa-desktop fa-3x"></i>
+                  View Site
+                </a>
+                <a href='https://github.com/Cwell21/tbear' target='_blank'>
+                  <i class="far fa-file-code fa-3x"></i>
+                  View Code
+                </a>
+              </nav>              
+            </section>
+            <section class='slide'>
+              <header>
+                <h2>Responsive Layout and Menu</h2>
+                <p>Learning project - Laytout / Responsive Menu</p>
+              </header>
+              <nav>
+                <a href='https://cwell21.github.io/responsiveMenu/' target='_blank'>
+                  <i class="fas fa-desktop fa-3x"></i>
+                  View Site
+                </a>
+                <a href='https://github.com/Cwell21/responsiveMenu' target='_blank'>
+                  <i class="far fa-file-code fa-3x"></i>
+                  View Code
+                </a>
+              </nav>              
+            </section>            
         </div>
       </section>
+
       <!-- RESUME SECTION -->
       <section class='subSection' id='resume'>
         <div class='btnClose' onclick='closePage("resume")'>X</div>
@@ -58,7 +159,7 @@
       </section>  
        
         <!-- START OF LANDING PAGE  -->
-      <header class='page-header'>
+      <header class='pageHeader'>
         <img id='logo' src='images/resumeLogo.svg'>
         <nav id='pageNavigation'>
           <ul id='navList'>
@@ -70,15 +171,15 @@
           </ul>
         </nav>
       </header>
-      <section class='splash'>
+      <section class='splash'>        
         <h2>
           FRONT END
           <br />
           DEVELOPER
         </h2>
         <div class='btnHolder'>    
-          <div class='btn btnPortfolia'><p>PORTFOLIO</p></div>   
-          <div class='btn btnResume'><p>RESUME</p></div>
+          <div class='btn btnPortfolia' onclick='dispSubPage("portfolio")'><p>PORTFOLIO</p></div>   
+          <div class='btn btnResume' onclick='dispSubPage("resume")'><p>RESUME</p></div>
         </div>             
       </section>
       <section id='aboutRibbon'>
@@ -111,7 +212,7 @@
           </figure>
           <h2>Portfolio</h2>
           <p>
-            <a href=#>VIEW</a>
+            <a href='javascript:void(0)' onclick='dispSubPage("portfolio")'>VIEW</a>
           </p>
         </div>
         <div class='module aboutModule'>
@@ -121,7 +222,7 @@
           </figure>
           <h2>Git Hub Repos</h2>
           <p>
-            <a href=#>VIEW</a>
+            <a href='https://github.com/cwell21' target='_blank'>VIEW</a>
           </p>
         </div>
         <div class='module aboutModule'>
@@ -131,7 +232,7 @@
           </figure>
           <h2>Resume</h2>
           <p>
-            <a href=#>VIEW</a>
+            <a href='javascript:void(0)' onclick='dispSubPage("resume")'>VIEW</a>
           </p>
         </div>
       </section>

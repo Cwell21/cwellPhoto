@@ -2,3 +2,63 @@
 STYLES FOR PORTFOLIO SECTION
 *****************************/
 
+.slideContainer {
+  /* border: 1px solid red; */
+  align-items: center;
+  background-color: rgb(75,75,75);
+  display: flex;
+  flex-flow: row wrap;  
+  height: auto;
+  justify-content: space-around;
+  margin-top: 10vh;
+  padding: 5vh 1vw;
+  width: 90vw;
+}
+
+.slide {  
+  /* border: 1px solid green; */
+  background-color: rgb(100,,100,100);
+  box-shadow: 5px 5px 10px rgb(5,5,5);
+  color: rgb(255,112,10);
+  flex-flow: column wrap;
+  height: 25vh;
+  justify-content: center;
+  margin: 2vh 0;
+  width: 25vw;
+}
+.slide header {
+  height: 40%;
+  width: 100%;
+}
+.slide header h2 {
+  height: 40%;
+  text-align: center;
+  width: 100%;}
+
+.slide header p{
+  height: 50%;
+  text-align: center;
+  width: 100%;
+}
+
+.slide nav {
+  display: flex;
+  flex-flow: row;
+  height: 60%;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.slide nav a {
+  color: rgb(255,112,10);
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  width: 25%;
+}
+
+.slide nav a i{
+  display: block;
+  padding-bottom: 2vh;
+}
