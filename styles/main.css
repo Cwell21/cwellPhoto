@@ -13,7 +13,7 @@ font-family: 'Alegreya Sans SC', sans-serif; - LINKS
 @import 'index.css'; /* styles for index.html page*/
 @import 'resume.css'; /*styles for resume section */
 @import 'portfolio.css'; /*styles for portfolio section */
-
+@import 'about.css'; /*styles for about section */
 * {
 
   box-sizing: border-box;
@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 img {
-  display: inline-block;
+  display: block;
   height: auto;
   max-width: 100%;
 }
@@ -50,7 +50,7 @@ img {
   position: absolute;
   top: 0;
   width: 100vw;
-  
+
 }
 
 .pageHeader {
@@ -108,4 +108,3 @@ img {
   width: 0;
   z-index: 1;
 }
-

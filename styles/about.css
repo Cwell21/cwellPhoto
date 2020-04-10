@@ -1,3 +1,40 @@
 /*****************************
 STYLES FOR ABOUT SECTION
 *****************************/
+.aboutContainer {
+  border: 1px solid green;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 75%;
+  justify-content: center;
+  margin: 3em;
+  width:100%;
+
+}
+
+.aboutMe {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  width: 100vw;
+}
+
+.aboutContainer h2, h3, p {
+
+  text-align: center;
+  width: 100%;
+}
+
+.aboutMe figure {
+  border: 1px solid red;
+  
+  height: 80%;
+  width: 40%;
+}
+
+.aboutMe img {
+  margin: 0 auto;
+  max-height: 100%;
+  width: auto;
+}

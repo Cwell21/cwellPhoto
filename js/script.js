@@ -24,7 +24,10 @@ elLogo.addEventListener('mouseout', () => {
 })
 
 
-// ABOUT RIBBON SCROLL EFFECT
+/*
+ABOUT RIBBON SCROLL EFFECT
+*/
+
 function myScroll() {
 
   let xPos = elAboutRibbon.getBoundingClientRect();
@@ -38,24 +41,23 @@ function myScroll() {
 
   // if(xPos.y <= -150){
   //   pulseModule();
-  // }   
+  // }
 }
 
 // DISPLAY SUB PAGE ON CLICK
 function dispSubPage(elIdToOpen) {
-  
+
   let elSchools = document.getElementsByClassName('school');
 
   document.getElementById(elIdToOpen).style.width = '100vw';
   document.getElementById(elIdToOpen).style.height = '100vh';
-  
+
   for(let i=0; i < elSchools.length; i++) {
     elSchools[i].style.marginLeft = '0px';
   }
 
-
   if (elIdToOpen == 'resume'){
-    
+
     let elSkillName = document.getElementsByClassName('skillName');
     for(let i=0; i<elSkillBar.length; i++) {
       switch (elSkillName[i].innerHTML){
@@ -79,9 +81,9 @@ function dispSubPage(elIdToOpen) {
           break;
         default:
           break;
-      }      
+      }
     }
-  }  
+  }
 }
 
 // HIDE SUB PAGE ON CLICK
@@ -116,11 +118,11 @@ function closePage(elIdToClose) {
 //       elModule[i].classList.add('modulePulse');
 //     }
 //   }, 50);
-  
+
 //   setTimeout(()=> {
 //     for(let i=0; i<elModule.length; i++) {
 //       elModule[i].classList.remove('modulePulse');
 //       elModule[i].classList.add('moduleVisible');
 //     }
-//   },500);    
+//   },500);
 // }

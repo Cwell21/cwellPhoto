@@ -23,7 +23,7 @@
     <title>Matt Caldwell</title>
 
   </head>
-  <body onscroll='myScroll()'>      
+  <body onscroll='myScroll()'>
     <div id='mainWrapper'>
       <!-- PORTFOLIO SECTION -->
       <section class='subSection' id='portfolio'>
@@ -48,7 +48,7 @@
                 <i class="far fa-file-code fa-3x"></i>
                 View Code
               </a>
-            </nav>              
+            </nav>
           </section>
           <section class='slide'>
             <header>
@@ -64,7 +64,7 @@
                 <i class="far fa-file-code fa-3x"></i>
                 View Code
               </a>
-            </nav>              
+            </nav>
           </section>
           <section class='slide'>
             <header>
@@ -80,7 +80,7 @@
                 <i class="far fa-file-code fa-3x"></i>
                 View Code
               </a>
-            </nav>              
+            </nav>
           </section>
           <section class='slide'>
               <header>
@@ -96,7 +96,7 @@
                   <i class="far fa-file-code fa-3x"></i>
                   View Code
                 </a>
-              </nav>              
+              </nav>
             </section>
             <section class='slide'>
               <header>
@@ -112,7 +112,7 @@
                   <i class="far fa-file-code fa-3x"></i>
                   View Code
                 </a>
-              </nav>              
+              </nav>
             </section>
             <section class='slide'>
               <header>
@@ -128,8 +128,8 @@
                   <i class="far fa-file-code fa-3x"></i>
                   View Code
                 </a>
-              </nav>              
-            </section>            
+              </nav>
+            </section>
         </div>
       </section>
 
@@ -156,31 +156,48 @@
             <div class='skillContainer'><span class='skillBar' id='scss'></span><p class='skillName'>SASS/SCSS</p></div>
           </section>
         </div>
-      </section>  
-       
-        <!-- START OF LANDING PAGE  -->
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class='subSection' id='about'>
+        <div class='btnClose' onclick='closePage("about")'>X</div>
+        <section class='aboutContainer'>
+          <h2>About Me</h2>
+          <article class='aboutMe'>
+            <figure class='myPic'>
+              <img src='./images/me.jpeg'>
+            </figure>
+            <article>
+              <h3>Me</h3>
+              <p>This is text about me</p>
+            </article>
+          </article>
+        </section>
+
+      </section>
+      <!-- START OF LANDING PAGE  -->
       <header class='pageHeader'>
         <img id='logo' src='images/resumeLogo.svg'>
         <nav id='pageNavigation'>
           <ul id='navList'>
             <li class='navItem'><a href='javascript:void(0)' onclick='dispSubPage("portfolio")'>Portfolio</a></li>
             <li class='navItem'><a href='javascript:void(0)' onclick='dispSubPage("resume")'>Resume</a></li>
-            <li class='navItem'><a href='#'>About</a></li>
+            <li class='navItem'><a href='javascript:void(0)' onclick='dispSubPage("about")'>About</a></li>
             <li class='navItem'><a href='https://github.com/cwell21' target='_blank'>Git Hub</a></li>
             <li class='navItem'><a href='#'>Contact</a></li>
           </ul>
         </nav>
       </header>
-      <section class='splash'>        
+      <section class='splash'>
         <h2>
           FRONT END
           <br />
           DEVELOPER
         </h2>
-        <div class='btnHolder'>    
-          <div class='btn btnPortfolia' onclick='dispSubPage("portfolio")'><p>PORTFOLIO</p></div>   
+        <div class='btnHolder'>
+          <div class='btn btnPortfolia' onclick='dispSubPage("portfolio")'><p>PORTFOLIO</p></div>
           <div class='btn btnResume' onclick='dispSubPage("resume")'><p>RESUME</p></div>
-        </div>             
+        </div>
       </section>
       <section id='aboutRibbon'>
         <figure id='aboutRibbonFigure'>
@@ -240,15 +257,15 @@
         <ul class='footerSocial'>
           <li><a href='https://github.com/cwell21' target='_blank'><i class="fab fa-github-square fa-2x"></i></a></li>
           <li><a href='https://www.linkedin.com/in/matt-caldwell-1839a838/' target='_blank'><i class="fab fa-linkedin fa-2x"></i></a></li>
-        </ul>  
+        </ul>
         <p class='footerSocial'>
           <a href='mailto:cwe11@yahoo.com' target='_blank'>EMAIL</a>
         </p>
         <p class='footerSocial'>
           OTHER
-        </p>     
+        </p>
       </footer>
-    </div>    
+    </div>
     <script src='js/script.js'></script>
   </body>
 </html>
