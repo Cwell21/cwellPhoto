@@ -39,7 +39,7 @@ img {
 
 .mainWrapper {
   background-image: url('../images/siteBackground.jpg');
-  background-size: cover;
+  background-size: contain;
   display: flex;
   flex-flow: column nowrap;
   height: auto;
