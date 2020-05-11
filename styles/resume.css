@@ -1,4 +1,4 @@
-/***************************** 
+/*****************************
 STYLES FOR RESUME SECTION
 *****************************/
 
@@ -8,7 +8,7 @@ EDUCATION STYLES
 *************************************/
 
 #education {
-  background-color: rgb(175,175,175); 
+  background-color: rgb(175,175,175);
   border: 1px solid rgb(255,112,10);
   border-radius: 10px;
   margin-top: 25vh;
@@ -51,7 +51,7 @@ SKILLS STYLES
   flex-flow: row nowrap;
   justify-content: flex-start;
   padding: 2vh 2vw;
-  
+
 }
 .skillBar {
   background-color: rgb(212,75,55);
@@ -66,6 +66,3 @@ SKILLS STYLES
   margin-left: 10px;
   width: 50%;
 }
-
-
-
