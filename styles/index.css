@@ -64,7 +64,8 @@ SPLASH STYLES
 
 .btn {
   align-items: center;
-  border: 1px solid rgb(212,175,55);
+  background-color: rgb(235,235,235);
+  border: 4px solid rgb(212,175,55);
   border-radius: 5px;
   cursor: pointer;
   display: flex;
@@ -72,9 +73,9 @@ SPLASH STYLES
   width: 40%;
 }
 .btn p {
-  color: rgb(235,235,235);
+  color: rgb(212,175,55);
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.75vw;
   text-align: center;
   width: 100%;
 }
